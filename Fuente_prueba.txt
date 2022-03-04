@@ -1,8 +1,8 @@
 --  GENERAR SQL                                                                                     
 --  VERSIÓN:                    V7R4M0 190621                                                       
---  GENERADO EN:               11/23/21 17:08:32                                                    
+--  GENERADO EN:               04/03/22 16:31:32                                                    
 --  BASE DE DATOS RELACIONAL:        NEON                                                           
---  OPCIÓN DE ESTÁNDARES:           DB2 FOR I                                                       
+--  OPCIÓN DE ESTÁNDARES:           DB2 FOR I Series                                                       
 CREATE TABLE CRNEMAILBF (                                                                           
  PNESUC NUMERIC(3, 0) NOT NULL DEFAULT 0 ,                                                          
  PNELINEA NUMERIC(4, 0) NOT NULL DEFAULT 0 ,                                                        
@@ -36,6 +36,6 @@ CREATE TABLE CRNEMAILBF (
   PNEFILLER1 TEXT IS 'CAMPO DISPONIBLE NUM' ,                                                       
   PNEFILLER2 TEXT IS 'CAMPO DISPONIBLE ALF' ) ;                                                     
                                                                                                     
- --GRANT ALTER , DELETE , INDEX , INSERT , REFERENCES , SELECT , UPDATE                             
+ --GRANT ALTER , INDEX , DELETE ,  INSERT  , SELECT , REFERENCES , UPDATE                             
  --ON CRNEMAILBF TO LSOWNER WITH GRANT OPTION ;                                                     
                                                  
