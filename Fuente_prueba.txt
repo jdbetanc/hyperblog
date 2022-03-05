@@ -35,7 +35,20 @@ CREATE TABLE CRNEMAILBF (
   PNEESTADO TEXT IS 'ESTADO: 0-NGC,1-NGA' ,                                                         
   PNEFILLER1 TEXT IS 'CAMPO DISPONIBLE NUM' ,                                                       
   PNEFILLER2 TEXT IS 'CAMPO DISPONIBLE ALF' ) ;                                                     
-                                                                                                    
+
+  LABEL ON COLUMN CRNEMAILBF                                                                         
+ ( PNESUC TEXT IS 'SUCURSAL' ,                                                                      
+  PNELINEA TEXT IS 'PRODUCTO' ,                                                                     
+  PNENOPER TEXT IS 'OPERACION' ,                                                                    
+  PNEMOTIVO TEXT IS 'MOTIVO NO GENERACION' ,                                                        
+  PNEUSER TEXT IS 'USUARIO MATRICULA' ,                                                             
+  PNEFECMAT TEXT IS 'FECHA MATRICULA' ,                                                             
+  PNEUSERAC TEXT IS 'USUARIO ACTUALIZACION' ,                                                       
+  PNEFECAC TEXT IS 'FECHA ACTUALIZACION' ,                                                          
+  PNEESTADO TEXT IS 'ESTADO: 0-NGC,1-NGA' ,                                                         
+  PNEFILLER1 TEXT IS 'CAMPO DISPONIBLE NUM' ,                                                       
+  PNEFILLER2 TEXT IS 'CAMPO DISPONIBLE ALF' ) ; 
+
  --GRANT ALTER , INDEX , DELETE ,  INSERT  , SELECT , REFERENCES , UPDATE                             
  --ON CRNEMAILBF TO LSOWNER WITH GRANT OPTION ;                                                     
                                                  
