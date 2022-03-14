@@ -1,7 +1,7 @@
 --  GENERAR SQL                                                                                     
 --  VERSIÓN:                    V7R4M0 190621                                                       
 --  GENERADO EN:               04/03/22 16:31:32                                                    
---  BASE DE DATOS RELACIONAL:        NEON                                                           
+--  BASE DE DATOS RELACIONAL:         leas                                                          
 --  OPCIÓN DE ESTÁNDARES:           DB2 FOR I Series                                                       
 CREATE TABLE CRNEMAILBF (                                                                           
  PNESUC NUMERIC(3, 0) NOT NULL DEFAULT 0 ,                                                          
