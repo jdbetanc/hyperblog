@@ -1,54 +1,54 @@
 --  GENERAR SQL                                                                                     
---  VERSIÓN:                    V7R4M0 190621                                                       
+--  VERSIÓN:                    V7.4.0 190621                                                       
 --  GENERADO EN:               04/03/22 16:31:32                                                    
---  BASE DE DATOS RELACIONAL:        NEON                                                           
+--  BASE DE DATOS RELACIONAL:        NEPON                                                           
 --  OPCIÓN DE ESTÁNDARES:           DB2 FOR I Series                                                       
-CREATE TABLE CRNEMAILBF (                                                                           
- PNESUC NUMERIC(3, 0) NOT NULL DEFAULT 0 ,                                                          
- PNELINEA NUMERIC(4, 0) NOT NULL DEFAULT 0 ,                                                        
- PNENOPER NUMERIC(11, 0) NOT NULL DEFAULT 0 ,                                                       
- PNEMOTIVO NUMERIC(2, 0) NOT NULL DEFAULT 0 ,                                                       
- PNEUSER CHAR(10) CCSID 284 NOT NULL DEFAULT '' ,                                                   
- PNEFECMAT NUMERIC(8, 0) NOT NULL DEFAULT 0 ,                                                       
- PNEUSERAC CHAR(10) CCSID 284 NOT NULL DEFAULT '' ,                                                 
- PNEFECAC NUMERIC(8, 0) NOT NULL DEFAULT 0 ,                                                        
- PNEESTADO NUMERIC(1, 0) NOT NULL DEFAULT 0 ,                                                       
- PNEFILLER1 NUMERIC(15, 0) NOT NULL DEFAULT 0 ,                                                     
-  PNEFILLER2 CHAR(50) CCSID 284 NOT NULL DEFAULT '' ,                                               
-  CONSTRAINT Q_WRKWAL_CRNEMAILBF_PNESUC_00001 PRIMARY KEY( PNESUC ,                                 
- PNELINEA , PNENOPER ) )                                                                            
+CREATE TABLE CRNEMAITG (                                                                           
+ PNESUCITG NUMERIC(3, 0) NOT NULL DEFAULT 0 ,                                                          
+ PNELINEAITG NUMERIC(4, 0) NOT NULL DEFAULT 0 ,                                                        
+ PNENOPERITG NUMERIC(11, 0) NOT NULL DEFAULT 0 ,                                                       
+ PNEMOTIVOITG NUMERIC(2, 0) NOT NULL DEFAULT 0 ,                                                       
+ PNEUSERITG CHAR(10) CCSID 284 NOT NULL DEFAULT '' ,                                                   
+ PNEFECMATITG NUMERIC(8, 0) NOT NULL DEFAULT 0 ,                                                       
+ PNEUSERACITG CHAR(10) CCSID 284 NOT NULL DEFAULT '' ,                                                 
+ PNEFECACITG NUMERIC(8, 0) NOT NULL DEFAULT 0 ,                                                        
+ PNEESTADOITG NUMERIC(1, 0) NOT NULL DEFAULT 0 ,                                                       
+ PNEFILLER1ITG NUMERIC(15, 0) NOT NULL DEFAULT 0 ,                                                     
+ PNEFILLER2ITG CHAR(50) CCSID 284 NOT NULL DEFAULT '' ,                                               
+ CONSTRAINTITG Q_WRKWAL_CRNEMAITG_PNESUC_00001 PRIMARY KEY( PNESUCITG ,                                 
+ PNELINEAITG , PNENOPERITG ) )                                                                            
                                                                                                     
-  RCDFMT CRNEMAILBF ;                                                                               
+  RCDFMT CRNEMAITG ;                                                                               
                                                                                                     
- LABEL ON TABLE CRNEMAILBF                                                                          
-  IS 'PAGARES A LOS QUE NO SE ENVIA CUENTA POR EMAIL' ;                                             
+ LABEL ON TABLE CRNEMAITG                                                                          
+  IS 'PAGARES POR EMAIL' ;                                             
                                                                                                     
- LABEL ON COLUMN CRNEMAILBF                                                                         
- ( PNESUC TEXT IS 'SUCURSAL' ,                                                                      
-  PNELINEA TEXT IS 'PRODUCTO' ,                                                                     
-  PNENOPER TEXT IS 'OPERACION' ,                                                                    
-  PNEMOTIVO TEXT IS 'MOTIVO NO GENERACION' ,                                                        
-  PNEUSER TEXT IS 'USUARIO MATRICULA' ,                                                             
-  PNEFECMAT TEXT IS 'FECHA MATRICULA' ,                                                             
-  PNEUSERAC TEXT IS 'USUARIO ACTUALIZACION' ,                                                       
-  PNEFECAC TEXT IS 'FECHA ACTUALIZACION' ,                                                          
-  PNEESTADO TEXT IS 'ESTADO: 0-NGC,1-NGA' ,                                                         
-  PNEFILLER1 TEXT IS 'CAMPO DISPONIBLE NUM' ,                                                       
-  PNEFILLER2 TEXT IS 'CAMPO DISPONIBLE ALF' ) ;                                                     
+ LABEL ON COLUMN CRNEMAITG                                                                         
+ ( PNESUCITG TEXT IS 'SUCURSAL' ,                                                                      
+  PNELINEAITG TEXT IS 'PRODUCTO' ,                                                                     
+  PNENOPERITG TEXT IS 'OPERACION' ,                                                                    
+  PNEMOTIVOITG TEXT IS 'MOTIVO NO GENERACION' ,                                                        
+  PNEUSERITG TEXT IS 'USUARIO MATRICULA' ,                                                             
+  PNEFECMATITG TEXT IS 'FECHA MATRICULA' ,                                                             
+  PNEUSERACITG TEXT IS 'USUARIO ACTUALIZACION' ,                                                       
+  PNEFECACITG TEXT IS 'FECHA ACTUALIZACION' ,                                                          
+  PNEESTADOITG TEXT IS 'ESTADO: 0-NGC,1-NGA' ,                                                         
+  PNEFILLER1ITG TEXT IS 'CAMPO DISPONIBLE NUM' ,                                                       
+  PNEFILLER2IITG TEXT IS 'CAMPO DISPONIBLE ALF' ) ;                                                     
 
-  LABEL ON COLUMN CRNEMAILBF                                                                         
- ( PNESUC TEXT IS 'SUCURSAL' ,                                                                      
-  PNELINEA TEXT IS 'PRODUCTO' ,                                                                     
-  PNENOPER TEXT IS 'OPERACION' ,                                                                    
-  PNEMOTIVO TEXT IS 'MOTIVO NO GENERACION' ,                                                        
-  PNEUSER TEXT IS 'USUARIO MATRICULA' ,                                                             
-  PNEFECMAT TEXT IS 'FECHA MATRICULA' ,                                                             
-  PNEUSERAC TEXT IS 'USUARIO ACTUALIZACION' ,                                                       
-  PNEFECAC TEXT IS 'FECHA ACTUALIZACION' ,                                                          
-  PNEESTADO TEXT IS 'ESTADO: 0-NGC,1-NGA' ,                                                         
-  PNEFILLER1 TEXT IS 'CAMPO DISPONIBLE NUM' ,                                                       
-  PNEFILLER2 TEXT IS 'CAMPO DISPONIBLE ALF' ) ; 
+  LABEL ON COLUMN CRNEMAITG                                                                         
+ ( PNESUCITG TEXT IS 'SUCURSAL' ,                                                                      
+  PNELINEAITG TEXT IS 'PRODUCTO' ,                                                                     
+  PNENOPERITG TEXT IS 'OPERACION' ,                                                                    
+  PNEMOTIVOITG TEXT IS 'MOTIVO NO GENERACION' ,                                                        
+  PNEUSERITG TEXT IS 'USUARIO MATRICULA' ,                                                             
+  PNEFECMATITG TEXT IS 'FECHA MATRICULA' ,                                                             
+  PNEUSERACITG TEXT IS 'USUARIO ACTUALIZACION' ,                                                       
+  PNEFECACITG TEXT IS 'FECHA ACTUALIZACION' ,                                                          
+  PNEESTADOITG TEXT IS 'ESTADO: 0-NGC,1-NGA' ,                                                         
+  PNEFILLER1ITG TEXT IS 'CAMPO DISPONIBLE NUM' ,                                                       
+  PNEFILLER2ITG TEXT IS 'CAMPO DISPONIBLE ALF' ) ; 
 
  --GRANT ALTER , INDEX , DELETE ,  INSERT  , SELECT , REFERENCES , UPDATE                             
- --ON CRNEMAILBF TO LSOWNER WITH GRANT OPTION ;                                                     
+ --ON CRNEMAITG TO NEPONUSER WITH GRANT OPTION ;                                                     
                                                  
