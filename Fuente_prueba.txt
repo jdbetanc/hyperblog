@@ -1,5 +1,5 @@
 --  GENERAR SQL                                                                                     
---  VERSIÓN:                    V7R4M0 190621                                                       
+--  VERSIÓN:                    V.7.0.9 190621                                                       
 --  GENERADO EN:               04/03/22 16:31:32                                                    
 --  BASE DE DATOS RELACIONAL:         Itacul                                                          
 --  OPCIÓN DE ESTÁNDARES:           DB2 FOR I Series                                                       
